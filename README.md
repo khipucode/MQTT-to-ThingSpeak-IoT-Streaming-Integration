@@ -19,6 +19,21 @@ Mqtt-thingspeak/
 ├── LICENSE              # Licença do projeto (ex: MIT)
 └── README.md            # Guia rápido de instalação, requisitos e execução
 ```
+
+---
+## Links do projeto
+
+### 🧪 Projeto no Wokwi
+[Project_3](https://wokwi.com/projects/456353236925773825)
+
+### 📊 Dashboard Público ThingSpeak
+[ThingSpeak Channel](https://thingspeak.mathworks.com/channels/3269220)
+
+### 📄 Relatório em PDF
+[Documentação do Projeto](https://github.com/khipucode/MQTT-to-ThingSpeak-IoT-Streaming-Integration/blob/main/docs/projet_integration_mtqq_thingspeak.pdf)
+
+---
+
 ## Arquitetura do Sistema
 O fluxo de dados opera da seguinte maneira:
 1. **Dispositivo IoT (Wokwi)**: Um microcontrolador ESP32 processa os dados dos sensores (DHT22 e PIR AS312) e os publica via MQTT seguro (SSL/TLS, porta 8883).
