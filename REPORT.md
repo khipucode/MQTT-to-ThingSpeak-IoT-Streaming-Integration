@@ -91,22 +91,6 @@ muito utilizado em automação industrial.
 ### 🔸 Controle de Fluxo
 O gateway pode filtrar ou reduzir frequência de envio respeitando limitações do ThingSpeak.
 
----
-
-## 📂 Estrutura do Repositório
-
-```text
-MQTT-to-ThingSpeak-IoT-Streaming-Integration/
-│
-├── README.md
-│
-├── src/
-│   └── sketch.ino          # Firmware ESP32 (Wokwi)
-│
-├── gateway/
-│   └── mqtt_gateway.py     # Script Python (paho-mqtt)
-
-```
 
 ---
 
