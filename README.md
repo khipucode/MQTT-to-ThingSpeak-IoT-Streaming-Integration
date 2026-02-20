@@ -3,6 +3,22 @@
 ## Descrição
 Este projeto implementa uma arquitetura distribuída de streaming MQTT para o monitoramento simulado de um datacenter. O sistema coleta dados de temperatura, umidade e presença por meio de um ESP32 simulado no Wokwi, publica as métricas em um broker intermediário (HiveMQ) e utiliza um gateway programado em Python para encaminhar os dados para a plataforma em nuvem ThingSpeak.
 
+## Organização de arquivos
+```
+Mqtt-thingspeak/
+├── assets/              # Imagens do circuito, diagramas e prints do dashboard
+├── docs/
+│   ├── ABOUT.md         # Objetivos, arquitetura do sistema e aprendizados
+│   └── REPORT.md        # Pinagem, esquema de ligação (DHT22/PIR) e especificações
+├── src/              
+│   ├── esp32/
+│   │   └── esp32.ino    # Firmware do microcontrolador
+│   └── bridge/
+│       └── ponte_v1.py  # Script Python para integração MQTT/ThingSpeak
+├── .gitignore           # Para ignorar arquivos como env/ e venv/
+├── LICENSE              # Licença do projeto (ex: MIT)
+└── README.md            # Guia rápido de instalação, requisitos e execução
+```
 ## Arquitetura do Sistema
 O fluxo de dados opera da seguinte maneira:
 1. **Dispositivo IoT (Wokwi)**: Um microcontrolador ESP32 processa os dados dos sensores (DHT22 e PIR AS312) e os publica via MQTT seguro (SSL/TLS, porta 8883).
