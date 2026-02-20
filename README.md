@@ -43,7 +43,6 @@ O fluxo de dados opera da seguinte maneira:
 
 ## Requisitos
 * Simulador online **Wokwi**.
-* https://wokwi.com/projects/456353236925773825
 * **Python 3.x** configurado com as bibliotecas `paho-mqtt` e `requests`.
 * Instância ativa no **HiveMQ Cloud**.
 * Conta configurada no **ThingSpeak** com os respectivos *Fields* e *Channel* ativados.
